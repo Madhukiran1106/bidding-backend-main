@@ -117,10 +117,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 - Validate incoming data for required fields.
 - Handle and return appropriate HTTP status codes and messages for errors (e.g., 400 for bad requests, 401 for unauthorized, 403 for forbidden, 404 for not found).
 
-## Image Upload
-- Implement image upload functionality for auction items using a library like multer.
-- Store image URLs in the database.
 
-## Search and Filtering
-- Implement search functionality for auction items.
-- Allow filtering items by status (e.g., active, ended).
