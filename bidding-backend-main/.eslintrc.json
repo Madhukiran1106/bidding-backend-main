@@ -1,0 +1,72 @@
+{
+    "env": {
+      "node": true,
+      "es2022": true,
+      "mocha": true
+    },
+    "extends": [
+      "airbnb-base",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:node/recommended",
+      "plugin:promise/recommended",
+      "plugin:prettier/recommended",
+      "plugin:security-node/recommended",
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2022,
+      "sourceType": "module"
+    },
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "trailingComma": "none",
+          "printWidth": 80,
+          "tabWidth": 2
+        }
+      ],
+      "promise/always-return": "error",
+      "promise/no-return-wrap": "error",
+      "promise/param-names": "error",
+      "promise/catch-or-return": "error",
+      "promise/no-native": "off",
+      "promise/no-nesting": "warn",
+      "promise/no-promise-in-callback": "warn",
+      "promise/no-callback-in-promise": "warn",
+      "promise/avoid-new": "warn",
+      "promise/no-new-statics": "error",
+      "promise/no-return-in-finally": "warn",
+      "promise/valid-params": "warn",
+      "indent": ["error", 2],
+      "quotes": ["error", "single"],
+      "comma-dangle": ["error", "never"],
+      "no-console": "off",
+      "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+      "arrow-body-style": ["error", "as-needed"],
+      "no-param-reassign": ["error", { "props": false }],
+      "prefer-destructuring": [
+        "error",
+        {
+          "VariableDeclarator": {
+            "array": false,
+            "object": true
+          },
+          "AssignmentExpression": {
+            "array": true,
+            "object": true
+          }
+        },
+        {
+          "enforceForRenamedProperties": false
+        }
+      ],
+      "import/no-extraneous-dependencies": [
+        "error",
+        { "devDependencies": ["**/test.js", "**/tests/**/*.js"] }
+      ],
+      "import/extensions": ["error", "always", { "ignorePackages": true }]
+    }
+  }
+  
